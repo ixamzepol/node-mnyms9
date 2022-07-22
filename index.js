@@ -40,7 +40,7 @@ app.put('/user/:id', (req, res) => {
   res.status(200).json(result)
 })
 
-app.patch('/user', (req, res) => {
+app.patch('/user/:id', (req, res) => {
   const user = req.body;
   const { id } = req.params;// no entiendo
   user.id = id;
