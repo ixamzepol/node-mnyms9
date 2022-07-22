@@ -55,7 +55,7 @@ app.delete('/user/:id', (req, res) => {//elimina el id de manera dinamica, solo 
   const { id } = req.params;
   //const id = req.params.id //segunda opcion
   const result = {
-    message: 'Usuario ${id} deleted'
+    message: `Usuario ${id} deleted`
   }
   res.status(200).json(result)
 })
